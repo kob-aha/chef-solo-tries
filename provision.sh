@@ -24,6 +24,7 @@ echo 'eval "$(rbenv init -)"' >> $RBENV_FILE
 
 git clone https://github.com/sstephenson/rbenv-gem-rehash.git $RBENV_FOLDER/plugins/rbenv-gem-rehash
 
+# Changing group to avoid permission errors. Taken from here: http://blakewilliams.me/blog/system-wide-rbenv-install
 chgrp -R rubies $RBENV_FOLDER
 chmod -R g+rwxXs $RBENV_FOLDER
 

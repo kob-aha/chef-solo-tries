@@ -12,6 +12,8 @@ sudo yum install -y git-core curl zlib1g-dev build-essential libssl-dev libreadl
 RBENV_FOLDER=/usr/local/rbenv
 RBENV_FILE=/etc/profile.d/rbenv.sh
 
+echo 'export RBENV_FOLDER="$( echo $RBENV_FOLDER )"' > $RBENV_FILE
+
 #su vagrant
 #cd /home/vagrant
 git clone git://github.com/sstephenson/rbenv.git $RBENV_FOLDER

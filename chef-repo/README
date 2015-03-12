@@ -1,0 +1,3 @@
+Running team city agent cookbook localy is done by running:
+
+sudo chef-client --local-mode --runlist 'recipe[teamcity_java_agent]' --config client.rb -j attributes.json 

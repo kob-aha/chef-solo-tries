@@ -36,9 +36,11 @@ end
 
 # TODO: Change URL
 # Add uncertified yum repo to install packages
-yum_repository 'uncertified' do
-  description "Uncertified Citi yum repo"
-  baseurl "http://uncertified/yum/stable/"
+yum_repository 'NOT-CERTIFIED' do
+  name 'not-certified'
+  description "NOT-CERTITIED Citi yum repo"
+  baseurl "http://yum.nam.nsroot.net/mrepo/rhel6as-x86_64/RPMS.os"
+  gpgcheck false
   action :create
 end
 

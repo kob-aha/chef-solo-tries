@@ -1,3 +1,7 @@
 source "https://supermarket.chef.io"
 
 metadata
+
+#cookbook 'chef-teamcity', git: 'http://github.com/mswart/chef-teamcity/tree/stable'
+#cookbook 'chef-teamcity', git: 'http://github.com/kob-aha/chef-teamcity'
+cookbook 'teamcity', path: '/vagrant/chef-repo/site-cookbooks/chef-teamcity'

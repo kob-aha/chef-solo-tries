@@ -5,6 +5,7 @@
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
 #include_recipe "java"
+include_recipe "chef-teamcity::agent"
 
 # TODO: Move it to the node definition
 node.default['java']['oracle']['accept_oracle_download_terms'] = true
